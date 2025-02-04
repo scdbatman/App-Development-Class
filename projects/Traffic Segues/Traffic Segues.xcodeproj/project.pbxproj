@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		2290AA4E2D4A7EE900D6071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2290AA2F2D4A7EE600D6071D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2290AA362D4A7EE600D6071D;
+			remoteInfo = "Traffic Segues";
+		};
+		2290AA582D4A7EE900D6071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2290AA2F2D4A7EE600D6071D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2290AA362D4A7EE600D6071D;
+			remoteInfo = "Traffic Segues";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2290AA372D4A7EE600D6071D /* Traffic Segues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traffic Segues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2290AA4D2D4A7EE900D6071D /* Traffic SeguesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traffic SeguesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2290AA572D4A7EE900D6071D /* Traffic SeguesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Traffic SeguesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2290AA5F2D4A7EE900D6071D /* Exceptions for "Traffic Segues" folder in "Traffic Segues" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2290AA362D4A7EE600D6071D /* Traffic Segues */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2290AA392D4A7EE600D6071D /* Traffic Segues */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2290AA5F2D4A7EE900D6071D /* Exceptions for "Traffic Segues" folder in "Traffic Segues" target */,
+			);
+			path = "Traffic Segues";
+			sourceTree = "<group>";
+		};
+		2290AA502D4A7EE900D6071D /* Traffic SeguesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Traffic SeguesTests";
+			sourceTree = "<group>";
+		};
+		2290AA5A2D4A7EE900D6071D /* Traffic SeguesUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Traffic SeguesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2290AA342D4A7EE600D6071D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA4A2D4A7EE900D6071D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA542D4A7EE900D6071D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2290AA2E2D4A7EE600D6071D = {
+			isa = PBXGroup;
+			children = (
+				2290AA392D4A7EE600D6071D /* Traffic Segues */,
+				2290AA502D4A7EE900D6071D /* Traffic SeguesTests */,
+				2290AA5A2D4A7EE900D6071D /* Traffic SeguesUITests */,
+				2290AA382D4A7EE600D6071D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2290AA382D4A7EE600D6071D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2290AA372D4A7EE600D6071D /* Traffic Segues.app */,
+				2290AA4D2D4A7EE900D6071D /* Traffic SeguesTests.xctest */,
+				2290AA572D4A7EE900D6071D /* Traffic SeguesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2290AA362D4A7EE600D6071D /* Traffic Segues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2290AA602D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic Segues" */;
+			buildPhases = (
+				2290AA332D4A7EE600D6071D /* Sources */,
+				2290AA342D4A7EE600D6071D /* Frameworks */,
+				2290AA352D4A7EE600D6071D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2290AA392D4A7EE600D6071D /* Traffic Segues */,
+			);
+			name = "Traffic Segues";
+			packageProductDependencies = (
+			);
+			productName = "Traffic Segues";
+			productReference = 2290AA372D4A7EE600D6071D /* Traffic Segues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2290AA4C2D4A7EE900D6071D /* Traffic SeguesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2290AA652D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic SeguesTests" */;
+			buildPhases = (
+				2290AA492D4A7EE900D6071D /* Sources */,
+				2290AA4A2D4A7EE900D6071D /* Frameworks */,
+				2290AA4B2D4A7EE900D6071D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2290AA4F2D4A7EE900D6071D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2290AA502D4A7EE900D6071D /* Traffic SeguesTests */,
+			);
+			name = "Traffic SeguesTests";
+			packageProductDependencies = (
+			);
+			productName = "Traffic SeguesTests";
+			productReference = 2290AA4D2D4A7EE900D6071D /* Traffic SeguesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2290AA562D4A7EE900D6071D /* Traffic SeguesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2290AA682D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic SeguesUITests" */;
+			buildPhases = (
+				2290AA532D4A7EE900D6071D /* Sources */,
+				2290AA542D4A7EE900D6071D /* Frameworks */,
+				2290AA552D4A7EE900D6071D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2290AA592D4A7EE900D6071D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2290AA5A2D4A7EE900D6071D /* Traffic SeguesUITests */,
+			);
+			name = "Traffic SeguesUITests";
+			packageProductDependencies = (
+			);
+			productName = "Traffic SeguesUITests";
+			productReference = 2290AA572D4A7EE900D6071D /* Traffic SeguesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2290AA2F2D4A7EE600D6071D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2290AA362D4A7EE600D6071D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2290AA4C2D4A7EE900D6071D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2290AA362D4A7EE600D6071D;
+					};
+					2290AA562D4A7EE900D6071D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2290AA362D4A7EE600D6071D;
+					};
+				};
+			};
+			buildConfigurationList = 2290AA322D4A7EE600D6071D /* Build configuration list for PBXProject "Traffic Segues" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2290AA2E2D4A7EE600D6071D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2290AA382D4A7EE600D6071D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2290AA362D4A7EE600D6071D /* Traffic Segues */,
+				2290AA4C2D4A7EE900D6071D /* Traffic SeguesTests */,
+				2290AA562D4A7EE900D6071D /* Traffic SeguesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2290AA352D4A7EE600D6071D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA4B2D4A7EE900D6071D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA552D4A7EE900D6071D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2290AA332D4A7EE600D6071D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA492D4A7EE900D6071D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2290AA532D4A7EE900D6071D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2290AA4F2D4A7EE900D6071D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2290AA362D4A7EE600D6071D /* Traffic Segues */;
+			targetProxy = 2290AA4E2D4A7EE900D6071D /* PBXContainerItemProxy */;
+		};
+		2290AA592D4A7EE900D6071D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2290AA362D4A7EE600D6071D /* Traffic Segues */;
+			targetProxy = 2290AA582D4A7EE900D6071D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2290AA612D4A7EE900D6071D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Traffic Segues/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-Segues";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2290AA622D4A7EE900D6071D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Traffic Segues/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-Segues";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2290AA632D4A7EE900D6071D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2290AA642D4A7EE900D6071D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2290AA662D4A7EE900D6071D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-SeguesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traffic Segues.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Traffic Segues";
+			};
+			name = Debug;
+		};
+		2290AA672D4A7EE900D6071D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-SeguesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Traffic Segues.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Traffic Segues";
+			};
+			name = Release;
+		};
+		2290AA692D4A7EE900D6071D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-SeguesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Traffic Segues";
+			};
+			name = Debug;
+		};
+		2290AA6A2D4A7EE900D6071D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Traffic-SeguesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Traffic Segues";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2290AA322D4A7EE600D6071D /* Build configuration list for PBXProject "Traffic Segues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2290AA632D4A7EE900D6071D /* Debug */,
+				2290AA642D4A7EE900D6071D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2290AA602D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic Segues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2290AA612D4A7EE900D6071D /* Debug */,
+				2290AA622D4A7EE900D6071D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2290AA652D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic SeguesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2290AA662D4A7EE900D6071D /* Debug */,
+				2290AA672D4A7EE900D6071D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2290AA682D4A7EE900D6071D /* Build configuration list for PBXNativeTarget "Traffic SeguesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2290AA692D4A7EE900D6071D /* Debug */,
+				2290AA6A2D4A7EE900D6071D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2290AA2F2D4A7EE600D6071D /* Project object */;
+}
