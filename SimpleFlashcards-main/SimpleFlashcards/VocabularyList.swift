@@ -181,6 +181,13 @@ struct Vocab {
             synonyms: ["attribute", "field"],
             notes: ["can be stored or computed"],
             referenceImage: "property"
+        ),
+        Vocab(
+            word: "initializer",
+            definition: " A special function that prepares an instance of a class or struct",
+            synonyms: ["Constructor", "Instantiator"],
+            notes: [".init()", "()"],
+            referenceImage: "initializer"
         )
     ]
 }

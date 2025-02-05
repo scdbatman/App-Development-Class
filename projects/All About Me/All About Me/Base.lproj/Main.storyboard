@@ -16,80 +16,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gni-0o-NPv">
-                                <rect key="frame" x="0.0" y="60" width="393" height="759"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-Wj-dbF">
+                                <rect key="frame" x="9.6666666666666572" y="84.333333333333314" width="373.66666666666674" height="683.33333333333348"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-Wj-dbF">
-                                        <rect key="frame" x="0.0" y="60" width="393" height="639"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anN-D9-mTi">
+                                        <rect key="frame" x="0.0" y="0.0" width="373.66666666666669" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-aN-ZhO">
+                                        <rect key="frame" x="0.0" y="60.333333333333314" width="373.66666666666669" height="623"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anN-D9-mTi">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-aN-ZhO">
-                                                <rect key="frame" x="0.0" y="60.333333333333314" width="393" height="578.66666666666674"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-8T-7qS">
+                                                <rect key="frame" x="0.0" y="0.0" width="373.66666666666669" height="291.66666666666669"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-8T-7qS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="269.33333333333331"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-WH-Roh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="269.33333333333331"/>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="STx-mE-wkI">
-                                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="269.33333333333331"/>
-                                                                <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <string key="text">I was born on March 28, 2004 in Bloomington Indiana. By age 2 I moved to hawaii and resided there for most of my life. At age 12 I was diagnosed with type one diabetes. After that I missed a lot of school and ended up getting my GED my junior year. </string>
-                                                                <color key="textColor" systemColor="labelColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                            </textView>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ql4-EQ-2sh">
-                                                        <rect key="frame" x="0.0" y="309.33333333333337" width="393" height="269.33333333333337"/>
-                                                        <subviews>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="52c-FQ-kYZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="269.33333333333331"/>
-                                                                <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <string key="text">Next, I went into the workforce, and bounced between Hawaii and Utah the next couple years. I had many fun jobs, including Zip line guiding, and working at Sundance resort under several titles. Now I am going to school at MTECH and am excited to be building a better future!</string>
-                                                                <color key="textColor" systemColor="labelColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                            </textView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="Zipline" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-yW-Lkl">
-                                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="269.33333333333331"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First days in hawaii" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-WH-Roh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="291.66666666666669"/>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="STx-mE-wkI">
+                                                        <rect key="frame" x="192" y="0.0" width="181.66666666666663" height="291.66666666666669"/>
+                                                        <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <string key="text">I was born on March 28, 2004 in Bloomington Indiana. By age 2 I moved to hawaii and resided there for most of my life. At age 12 I was diagnosed with type one diabetes. After that I missed a lot of school and ended up getting my GED my junior year. </string>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ql4-EQ-2sh">
+                                                <rect key="frame" x="0.0" y="331.66666666666663" width="373.66666666666669" height="291.33333333333337"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="52c-FQ-kYZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="291.33333333333331"/>
+                                                        <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <string key="text">Next, I went into the workforce, and bounced between Hawaii and Utah the next couple years. I had many fun jobs, including Zip line guiding, and working at Sundance resort under several titles. Now I am going to school at MTECH and am excited to be building a better future!</string>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="Zipline" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-yW-Lkl">
+                                                        <rect key="frame" x="192" y="0.0" width="181.66666666666663" height="291.33333333333331"/>
+                                                    </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.37695133689999999" green="0.77652299400000002" blue="0.76470917459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstItem="anN-D9-mTi" firstAttribute="centerX" secondItem="LqA-Wj-dbF" secondAttribute="centerX" id="3LG-9d-Gw5"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.37695133689999999" green="0.77652299400000002" blue="0.76470917459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="LqA-Wj-dbF" firstAttribute="leading" secondItem="Gni-0o-NPv" secondAttribute="leading" id="Igc-H6-Uzh"/>
-                                    <constraint firstItem="LqA-Wj-dbF" firstAttribute="top" secondItem="Gni-0o-NPv" secondAttribute="top" constant="60" id="l2Y-LA-suU"/>
-                                    <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerY" secondItem="Gni-0o-NPv" secondAttribute="centerY" id="n73-uK-FFP"/>
-                                    <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerX" secondItem="Gni-0o-NPv" secondAttribute="centerX" id="uca-rZ-hGJ"/>
+                                    <constraint firstItem="anN-D9-mTi" firstAttribute="centerX" secondItem="LqA-Wj-dbF" secondAttribute="centerX" id="6gz-MI-lpc"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.42007664278627183" green="0.86078912019729614" blue="0.84956890097766258" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Gni-0o-NPv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="Cag-mc-pCm"/>
-                            <constraint firstItem="Gni-0o-NPv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WM4-Pg-zwj"/>
-                            <constraint firstItem="Gni-0o-NPv" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="Y4n-ia-br4"/>
-                            <constraint firstItem="Gni-0o-NPv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qYd-XC-m9I"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6u-9V-mZg"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HfK-Nz-f2g"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.95" id="L8l-VY-wV4"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="WtS-Ek-EZw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -104,8 +91,27 @@
                     <view key="view" contentMode="scaleToFill" id="597-1D-KjP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-48-gjl">
+                                <rect key="frame" x="0.0" y="84.333333333333314" width="393" height="683.33333333333348"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-RW-57j">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="683.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t1c-sG-AgO"/>
                         <color key="backgroundColor" red="0.23463607575422829" green="0.7815238335947825" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Kgz-48-gjl" firstAttribute="height" secondItem="t1c-sG-AgO" secondAttribute="height" multiplier="0.9" id="GEI-pU-CBi"/>
+                            <constraint firstItem="Kgz-48-gjl" firstAttribute="width" secondItem="t1c-sG-AgO" secondAttribute="width" id="TJs-Lo-nCU"/>
+                            <constraint firstItem="Kgz-48-gjl" firstAttribute="centerY" secondItem="597-1D-KjP" secondAttribute="centerY" id="m3k-vS-myz"/>
+                            <constraint firstItem="Kgz-48-gjl" firstAttribute="centerX" secondItem="597-1D-KjP" secondAttribute="centerX" id="mY6-Af-3YO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPJ-Uc-ani" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,6 +150,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="First days in hawaii" width="177" height="240"/>
         <image name="Zipline" width="1575" height="2092"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
