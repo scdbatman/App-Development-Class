@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qim-hI-dVe">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="All_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BioScreen" customModule="All_About_Me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-Wj-dbF">
-                                <rect key="frame" x="9.6666666666666572" y="84.333333333333314" width="373.66666666666674" height="683.33333333333348"/>
+                                <rect key="frame" x="19.666666666666657" y="106.66666666666669" width="353.66666666666674" height="639"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anN-D9-mTi">
-                                        <rect key="frame" x="0.0" y="0.0" width="373.66666666666669" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="BIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anN-D9-mTi">
+                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="U3L-Fp-L1T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-aN-ZhO">
-                                        <rect key="frame" x="0.0" y="60.333333333333314" width="373.66666666666669" height="623"/>
+                                        <rect key="frame" x="0.0" y="70" width="353.66666666666669" height="569"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-8T-7qS">
-                                                <rect key="frame" x="0.0" y="0.0" width="373.66666666666669" height="291.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="264.33333333333331"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First days in hawaii" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-WH-Roh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="291.66666666666669"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="First days in hawaii" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-WH-Roh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="264.33333333333331"/>
                                                     </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="STx-mE-wkI">
-                                                        <rect key="frame" x="192" y="0.0" width="181.66666666666663" height="291.66666666666669"/>
-                                                        <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR2-Km-zJa">
+                                                        <rect key="frame" x="182" y="0.0" width="171.66666666666663" height="264.33333333333331"/>
                                                         <string key="text">I was born on March 28, 2004 in Bloomington Indiana. By age 2 I moved to hawaii and resided there for most of my life. At age 12 I was diagnosed with type one diabetes. After that I missed a lot of school and ended up getting my GED my junior year. </string>
-                                                        <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ql4-EQ-2sh">
-                                                <rect key="frame" x="0.0" y="331.66666666666663" width="373.66666666666669" height="291.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="304.33333333333337" width="353.66666666666669" height="264.66666666666663"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="52c-FQ-kYZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="291.33333333333331"/>
-                                                        <color key="backgroundColor" red="0.4205906391" green="0.86278223990000003" blue="0.85098421570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-SY-SIh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="264.66666666666669"/>
                                                         <string key="text">Next, I went into the workforce, and bounced between Hawaii and Utah the next couple years. I had many fun jobs, including Zip line guiding, and working at Sundance resort under several titles. Now I am going to school at MTECH and am excited to be building a better future!</string>
-                                                        <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="Zipline" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-yW-Lkl">
-                                                        <rect key="frame" x="192" y="0.0" width="181.66666666666663" height="291.33333333333331"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="Zipline shoulder chameleon" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-yW-Lkl">
+                                                        <rect key="frame" x="182" y="0.0" width="171.66666666666663" height="264.66666666666669"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -73,18 +73,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.42007664278627183" green="0.86078912019729614" blue="0.84956890097766258" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6u-9V-mZg"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A9S-R5-Ige"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="Do1-cu-gAf"/>
                             <constraint firstItem="LqA-Wj-dbF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HfK-Nz-f2g"/>
-                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.95" id="L8l-VY-wV4"/>
-                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="WtS-Ek-EZw"/>
+                            <constraint firstItem="LqA-Wj-dbF" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="L8l-VY-wV4"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Bio" image="calendar" catalog="system" id="5Ax-tx-5nt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="973.28244274809151" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Family-->
         <scene sceneID="ppE-al-2vk">
             <objects>
                 <viewController id="x7N-hC-LN7" sceneMemberID="viewController">
@@ -92,68 +93,211 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-48-gjl">
-                                <rect key="frame" x="0.0" y="84.333333333333314" width="393" height="683.33333333333348"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-48-gjl">
+                                <rect key="frame" x="19.666666666666657" y="106.66666666666669" width="353.66666666666674" height="639"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAMILY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-RW-57j">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="683.33333333333337"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="FAMILY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-RW-57j">
+                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="lsa-QV-P4M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="26a-Cm-DjN">
+                                        <rect key="frame" x="0.0" y="50" width="353.66666666666669" height="589"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-Gz-aRv">
+                                                <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="139.66666666666666"/>
+                                                <string key="text">I am the second oldest child in my family. I have three little brothers and one older sister. Not sure why my two loving parents wanted so many of us but here we are.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PjO-k7-YHX">
+                                                <rect key="frame" x="0.0" y="149.66666666666669" width="353.66666666666669" height="139.66666666666669"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family picture" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-aX-vbF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="139.66666666666666"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby quinn" translatesAutoresizingMaskIntoConstraints="NO" id="huE-wd-hbC">
+                                                        <rect key="frame" x="182" y="0.0" width="171.66666666666663" height="139.66666666666666"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwE-gb-wuJ">
+                                                <rect key="frame" x="0.0" y="299.33333333333337" width="353.66666666666669" height="139.66666666666663"/>
+                                                <string key="text">I love my family. We are very close. We don't always get along but that's because we are all smart independant and stubborn people. At the end of the day, it's all love and there's nobody else I'd rather spend time with.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SWM-9D-ai5">
+                                                <rect key="frame" x="0.0" y="449" width="353.66666666666669" height="140"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silly siblings" translatesAutoresizingMaskIntoConstraints="NO" id="XuP-A2-IrQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="140"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shark diving" translatesAutoresizingMaskIntoConstraints="NO" id="DOm-df-4DT">
+                                                        <rect key="frame" x="182" y="0.0" width="171.66666666666663" height="140"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t1c-sG-AgO"/>
-                        <color key="backgroundColor" red="0.23463607575422829" green="0.7815238335947825" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.64479047060000005" green="0.49766618010000002" blue="0.99971467260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kgz-48-gjl" firstAttribute="height" secondItem="t1c-sG-AgO" secondAttribute="height" multiplier="0.9" id="GEI-pU-CBi"/>
-                            <constraint firstItem="Kgz-48-gjl" firstAttribute="width" secondItem="t1c-sG-AgO" secondAttribute="width" id="TJs-Lo-nCU"/>
+                            <constraint firstItem="Kgz-48-gjl" firstAttribute="width" secondItem="t1c-sG-AgO" secondAttribute="width" multiplier="0.9" id="TJs-Lo-nCU"/>
                             <constraint firstItem="Kgz-48-gjl" firstAttribute="centerY" secondItem="597-1D-KjP" secondAttribute="centerY" id="m3k-vS-myz"/>
                             <constraint firstItem="Kgz-48-gjl" firstAttribute="centerX" secondItem="597-1D-KjP" secondAttribute="centerX" id="mY6-Af-3YO"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Family" image="figure.2.and.child.holdinghands" catalog="system" id="qfv-Ne-kEb">
+                        <color key="badgeColor" red="0.057217789654619822" green="5.1644995961842744e-16" blue="0.4651767691386115" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPJ-Uc-ani" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740" y="4"/>
+            <point key="canvasLocation" x="2367" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Hobbies-->
         <scene sceneID="Vxq-Y6-bW2">
             <objects>
                 <viewController id="svl-dE-Kua" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mCb-W9-Oiq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-Uj-dqh">
+                                <rect key="frame" x="19.666666666666657" y="106.66666666666669" width="353.66666666666674" height="639"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOBBIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hn-Ep-ifo">
+                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ARg-7I-FuW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khd-n2-jFg">
+                                        <rect key="frame" x="0.0" y="60" width="353.66666666666669" height="579"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TLh-VL-fFy">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="579"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard stale fish" translatesAutoresizingMaskIntoConstraints="NO" id="ML0-9q-b2s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="144.66666666666666"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ice bath" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-U4-dAl">
+                                                        <rect key="frame" x="0.0" y="144.66666666666669" width="162" height="144.66666666666669"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spear diving" translatesAutoresizingMaskIntoConstraints="NO" id="iI2-Ub-6bE">
+                                                        <rect key="frame" x="0.0" y="289.33333333333337" width="162" height="144.66666666666663"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skydive" translatesAutoresizingMaskIntoConstraints="NO" id="dtH-YV-uio">
+                                                        <rect key="frame" x="0.0" y="434" width="162" height="145"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="A D R E N A L I N E" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESg-jT-Gnv">
+                                                <rect key="frame" x="162" y="0.0" width="30" height="579"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="zJm-bq-rvR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b4v-MA-pNH">
+                                                <rect key="frame" x="192" y="0.0" width="161.66666666666663" height="579"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hiking" translatesAutoresizingMaskIntoConstraints="NO" id="DhD-Pc-dwb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="144.66666666666666"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zipline high up" translatesAutoresizingMaskIntoConstraints="NO" id="V89-Wd-qUY">
+                                                        <rect key="frame" x="0.0" y="144.66666666666669" width="161.66666666666666" height="144.66666666666669"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowboard tail grab" translatesAutoresizingMaskIntoConstraints="NO" id="3hp-Cn-YJi">
+                                                        <rect key="frame" x="0.0" y="289.33333333333337" width="161.66666666666666" height="144.66666666666663"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skate around nate" translatesAutoresizingMaskIntoConstraints="NO" id="N8w-pB-f9X">
+                                                        <rect key="frame" x="0.0" y="434" width="161.66666666666666" height="145"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ESg-jT-Gnv" firstAttribute="centerX" secondItem="Khd-n2-jFg" secondAttribute="centerX" id="vd1-F7-3NN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Hn-Ep-ifo" firstAttribute="centerX" secondItem="ZOQ-Uj-dqh" secondAttribute="centerX" id="ExH-kD-rc8"/>
+                                    <constraint firstItem="Khd-n2-jFg" firstAttribute="centerX" secondItem="ZOQ-Uj-dqh" secondAttribute="centerX" id="dTg-n7-4jG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mQ7-vQ-BlS"/>
-                        <color key="backgroundColor" red="0.45166230518896955" green="1" blue="0.61897702956343048" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.26989036799999999" green="0.79595518109999996" blue="0.99829977749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZOQ-Uj-dqh" firstAttribute="centerX" secondItem="mCb-W9-Oiq" secondAttribute="centerX" id="NOg-2a-Cmw"/>
+                            <constraint firstItem="ZOQ-Uj-dqh" firstAttribute="height" secondItem="mQ7-vQ-BlS" secondAttribute="height" multiplier="0.9" id="evf-oV-mxl"/>
+                            <constraint firstItem="ZOQ-Uj-dqh" firstAttribute="centerY" secondItem="mCb-W9-Oiq" secondAttribute="centerY" id="lFR-2G-Uc8"/>
+                            <constraint firstItem="ZOQ-Uj-dqh" firstAttribute="width" secondItem="mQ7-vQ-BlS" secondAttribute="width" multiplier="0.9" id="qOq-Ct-609"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="figure.skateboarding" catalog="system" id="RCH-VB-V3I"/>
+                    <navigationItem key="navigationItem" id="4x0-hf-FN1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCD-fs-alu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="4"/>
+            <point key="canvasLocation" x="1661.8320610687022" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ieZ-k7-sWG">
+        <!--Tab Bar Controller-->
+        <scene sceneID="fKE-g2-oV6">
             <objects>
-                <viewController id="WHn-EK-dSP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CBC-k2-w2b">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vY0-no-8ge"/>
-                        <color key="backgroundColor" red="0.62134210977854465" green="0.50546963718661797" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vJs-pa-36a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qim-hI-dVe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tup-8m-0bF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sip-zS-APV"/>
+                        <segue destination="svl-dE-Kua" kind="relationship" relationship="viewControllers" id="9rz-jt-Vvw"/>
+                        <segue destination="x7N-hC-LN7" kind="relationship" relationship="viewControllers" id="Lz9-pq-9Pc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCg-gN-uFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131" y="4"/>
+            <point key="canvasLocation" x="2098" y="-922"/>
         </scene>
     </scenes>
     <resources>
         <image name="First days in hawaii" width="177" height="240"/>
-        <image name="Zipline" width="1575" height="2092"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Ice bath" width="4284" height="5712"/>
+        <image name="Zipline shoulder chameleon" width="1575" height="2092"/>
+        <image name="baby quinn" width="2042" height="1522"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="family picture" width="4032" height="3024"/>
+        <image name="figure.2.and.child.holdinghands" catalog="system" width="128" height="93"/>
+        <image name="figure.skateboarding" catalog="system" width="111" height="128"/>
+        <image name="hiking" width="2316" height="3088"/>
+        <image name="shark diving" width="4032" height="3024"/>
+        <image name="silly siblings" width="1500" height="1001"/>
+        <image name="skate around nate" width="2140" height="1811"/>
+        <image name="skydive" width="2400" height="2100"/>
+        <image name="snowboard stale fish" width="2021" height="1170"/>
+        <image name="snowboard tail grab" width="2532" height="1170"/>
+        <image name="spear diving" width="3024" height="4032"/>
+        <image name="zipline high up" width="2264" height="2580"/>
     </resources>
 </document>
