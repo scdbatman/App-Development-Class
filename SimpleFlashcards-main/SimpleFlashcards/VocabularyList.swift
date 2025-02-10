@@ -188,6 +188,13 @@ struct Vocab {
             synonyms: ["Constructor", "Instantiator"],
             notes: [".init()", "()"],
             referenceImage: "initializer"
+        ),
+        Vocab(
+            word: "immutable",
+            definition: "A value or variable that cannot be changed after initialization",
+            synonyms: ["constant", "unchangeable"],
+            notes: ["LET declares immutability", "Class pointers are immutable when declared with let, but not their properties"],
+            referenceImage: "immutable"
         )
     ]
 }
