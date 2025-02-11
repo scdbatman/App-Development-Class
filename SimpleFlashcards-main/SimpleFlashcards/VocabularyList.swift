@@ -195,6 +195,13 @@ struct Vocab {
             synonyms: ["constant", "unchangeable"],
             notes: ["LET declares immutability", "Class pointers are immutable when declared with let, but not their properties"],
             referenceImage: "immutable"
+        ),
+        Vocab(
+            word: "control flow",
+            definition: "The order in which individual statements or blocks of code are executed",
+            synonyms: ["execution order", "logic flow"],
+            notes: ["loops and conditionals dictate control flow"],
+            referenceImage: "control flow"
         )
     ]
 }
