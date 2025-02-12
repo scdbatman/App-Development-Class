@@ -197,10 +197,24 @@ struct Vocab {
             referenceImage: "immutable"
         ),
         Vocab(
+            word: "function signature",
+            definition: "The name, parameters, and return type of a function",
+            synonyms: ["method signature", "definition"],
+            notes: ["func thisIsTheFuncSigLine(_ int: Int) -> Int {"],
+            referenceImage: "control flow"
+        ),
+        Vocab(
             word: "control flow",
             definition: "The order in which individual statements or blocks of code are executed",
             synonyms: ["execution order", "logic flow"],
             notes: ["loops and conditionals dictate control flow"],
+            referenceImage: "control flow"
+        ),
+        Vocab(
+            word: "nested",
+            definition: "Arranged in a hierarchical structure",
+            synonyms: [""],
+            notes: ["This view is \"nested" in its super view"],
             referenceImage: "control flow"
         )
     ]

@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         
         guard let titleLabel = sender.titleLabel?.text else {
             print("titleLabel text is nil")
-            return
+            return 
         }
         let letterString = titleLabel
         let letter = Character(letterString.lowercased())
