@@ -39,15 +39,16 @@ class ViewController: UIViewController {
         
         if uIText == "=" {
 
-            print("Save number \(currentNumber)")
             savedInput.append(currentNumber)
             
+            print("before calculation saved input is \(savedInput)")
             let result = makeCalculation()
             calculationLabel.text = result
             
             currentText = result
             currentNumber.input = result
-            savedInput = [currentNumber]
+            savedInput = []
+            
             print("made calculation saved number \(savedInput)")
             
             clearButton.setTitle("AC", for: .normal)
@@ -67,23 +68,34 @@ class ViewController: UIViewController {
                 currentText = ""
                 calculationLabel.text = ""
                 currentNumber.input = ""
-                savedInput = [currentNumber]
+                savedInput.removeAll()
             print(savedInput)
-        }else if uIText == "+" || uIText == "-" || uIText == "/" || uIText == "X" {
+        }else if uIText == "+/-" {
+            if let number = Double(currentNumber.input) {
+                print(currentNumber.input)
+                guard let range = currentText.range(of: polishResult(result: number), options: .backwards) else {
+                    print("could not negate number")
+                    return
+                }
+                currentNumber.input = String(number * -1)
+                
+                currentText.replaceSubrange(range, with: polishResult(result: number * -1))
+                calculationLabel.text = currentText
+                
+            }
+            
+    }else if uIText == "+" || uIText == "-" || uIText == "/" || uIText == "X" {
             currentText.append(uIText)
             calculationLabel.text = currentText
 
-            print("Save number \(currentNumber)")
             savedInput.append(currentNumber)
             
             currentNumber.input = uIText
             currentNumber.type = .operation
-            print("Save operator \(currentNumber)")
             savedInput.append(currentNumber)
             
             currentNumber.input = ""
             currentNumber.type = .number
-            print("saved stuff \(savedInput)")
             
             lastInput = uIText
             
@@ -132,11 +144,18 @@ class ViewController: UIViewController {
                 }//end of switch
             }//end of else if number or operator
         }//end of for
-        return String(result)
+        
+        return polishResult(result: result)
     }//end of make calculation
     
     
-    
+    func polishResult(result: Double) -> String {
+        if result.rounded() == result {
+            return String(format: "%.0f", result)
+        } else {
+            return String(format: "%.3f", result)
+        }
+    }
     
 }//end of view controller
 
