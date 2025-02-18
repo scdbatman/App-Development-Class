@@ -19,10 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet var calculationButtons: [UIButton]!
     @IBOutlet var clearButton: UIButton!
     
+    @IBOutlet var lastOperationLabel: UILabel!
+    
     var currentNumber = OperationInput(input: "", type: .number)
     var currentText: String = ""
     var savedInput = [OperationInput]()
     var lastInput = ""
+
     //    var currentCalculation: Double = 0
     //    var operationsToUse = []()
     //    var lastInput: String = ""
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
             print("before calculation saved input is \(savedInput)")
             let result = makeCalculation()
             calculationLabel.text = result
-            
+            lastOperationLabel.text = "\(stringOfInput(savedInput: savedInput)) = \(result)"
             currentText = result
             currentNumber.input = result
             savedInput = []
@@ -53,6 +56,8 @@ class ViewController: UIViewController {
             
             clearButton.setTitle("AC", for: .normal)
             clearButton.titleLabel?.font = .systemFont(ofSize: 30)
+            
+
         }else if uIText == "C" {
             if currentText.count > 0 {
                 currentText.removeLast()
@@ -65,10 +70,11 @@ class ViewController: UIViewController {
                 clearButton.titleLabel?.font = .systemFont(ofSize: 30)
             }
         }else if uIText == "AC" {
-                currentText = ""
-                calculationLabel.text = ""
-                currentNumber.input = ""
-                savedInput.removeAll()
+            currentText = ""
+            calculationLabel.text = ""
+            currentNumber.input = ""
+            savedInput.removeAll()
+            lastOperationLabel.text = ""
             print(savedInput)
         }else if uIText == "+/-" {
             if let number = Double(currentNumber.input) {
@@ -84,7 +90,27 @@ class ViewController: UIViewController {
                 
             }
             
-    }else if uIText == "+" || uIText == "-" || uIText == "/" || uIText == "X" {
+    }else if uIText == "%" {
+        
+        if let number = Double(currentNumber.input), currentNumber.type != .percentage {
+                print(" before percent number is\(polishResult(result: number))")
+                guard let range = currentText.range(of: polishResult(result: number), options: .backwards) else {
+                    print("could not percent number")
+                    return
+                }
+                if currentNumber.type != .percentage {
+                    currentNumber.input = String(number / 100)
+                    currentNumber.type = .percentage
+                    
+                    currentText.replaceSubrange(range, with: "\(polishResult(result: number))%")
+                    calculationLabel.text = currentText
+                }//end of if else percentage
+                
+                
+            }//end of if let
+        
+        
+    }else if uIText == "+" || uIText == "-" || uIText == "/" || uIText == "x" {
             currentText.append(uIText)
             calculationLabel.text = currentText
 
@@ -137,7 +163,7 @@ class ViewController: UIViewController {
                     result -= number
                 case "/" :
                     result /= number
-                case "X" :
+                case "x" :
                     result *= number
                 default :
                     break
@@ -148,21 +174,41 @@ class ViewController: UIViewController {
         return polishResult(result: result)
     }//end of make calculation
     
-    
     func polishResult(result: Double) -> String {
-        if result.rounded() == result {
-            return String(format: "%.0f", result)
-        } else {
-            return String(format: "%.3f", result)
+        if result < 0.0001 && result > -0.0001{
+            
+            return "0"
         }
-    }
+        let roundedResult = (result * 10_000).rounded() / 10_000
+        
+        if roundedResult.truncatingRemainder(dividingBy: 1) == 0 {
+            return String(format: "%.0f", roundedResult)
+        }else {
+            return String(roundedResult)
+        }
+    }//end of polishResult
+    
+    func stringOfInput(savedInput: [OperationInput]) -> String {
+        var stringInput = ""
+        for inputs in savedInput {
+            if let number = Double(inputs.input) {
+                stringInput += polishResult(result: number)
+                stringInput += " "
+            }else {
+                stringInput += inputs.input
+                stringInput += " "
+            }//if else input is a number
+        }//end of for loop
+        
+        return stringInput
+    }//end of string of input
     
 }//end of view controller
 
 
 struct OperationInput {
     enum Operation {
-        case number, operation
+        case number, operation, percentage
     }
     var input: String
     var type: Operation
@@ -171,123 +217,5 @@ struct OperationInput {
 func updateUI() {
     
 }
-//        guard let titleLabel = sender.titleLabel?.text else {
-//            print("titleLabel text is nil")
-//            return
-//        }
-//        if titleLabel == "=" {
-//            saveCurrentNumber()
-//            currentNumber = [String(makeCalculation())]
-//            currentText = currentNumber
-//            updateUI()
-//            clearButton.titleLabel?.text = "AC"
-//        
-//        }else if titleLabel == "AC" {
-//            resetCalculation()
-//            updateUI()
-//        }else if titleLabel == "C" {
-//            clearLastInput()
-//            
-//            updateUI()
-//        }else if titleLabel == "+" || titleLabel == "-" || titleLabel == "/" || titleLabel == "X"{
-//            currentNumber.input += titleLabel
-//            currentNumber.type = .operation
-//            
-//            updateUI()
-//        }else{
-//            currentNumber.input += titleLabel
-//            currentNumber.type = .number
-//            currentText.append(titleLabel)
-//            lastInput = titleLabel
-//            updateUI()
-//            clearButton.titleLabel?.text = "C"
-//        }//end of if titlelabel is operator
-//        
-//    }//end of IBAction
-//    
-//    func updateUI() {
-//        let calculationString: String = currentText.joined()
-//        calculationLabel.text = calculationString
-//    }//end of makeNumbersText
-//    
-//    func makeCalculation() -> Double {
-//        var total = 0.0
-//        
-//        for operands in currentNumber.input {
-//            if currentNumber.type == .operation {
-//                
-//            }
-//        }
-//        var iteration: Int = 0
-//        currentCalculation = numbersToUse[0]
-//        for _ in numbersToUse {
-//            if iteration != numbersToUse.count - 1 {
-//                let currentOperator = operatorsToUse[iteration]
-//                print("\(operatorsToUse[iteration]) operator")
-//                switch currentOperator {
-//                case "+":
-//                    currentCalculation = currentCalculation + numbersToUse[iteration + 1]
-//                case "-":
-//                    currentCalculation = currentCalculation - numbersToUse[iteration + 1]
-//                case "/":
-//                    currentCalculation = currentCalculation / numbersToUse[iteration + 1]
-//                case "X":
-//                    currentCalculation = currentCalculation * numbersToUse[iteration + 1]
-//                default: currentCalculation = 69.6969
-//                }//end of switch
-//                print("iteration \(iteration)")
-//                iteration += 1
-//            }else {
-//                currentCalculation = ((currentCalculation * 1000).rounded() / 1000)
-//                print("Result \(currentCalculation)")
-//                numbersToUse = []
-//                operatorsToUse = []
-//                return currentCalculation
-//            }//end of if
-//        }//end of for
-//        return 0
-//}//end of make calculation
-    
-//    func saveCurrentNumber() {
-//        print("\(currentNumber) current number")
-//        let doubleNumber = currentNumber.joined()
-//        if let savedNumber = Double(doubleNumber) {
-//            numbersToUse.append(Double(savedNumber))
-//            currentNumber = []
-//            print("\(numbersToUse) saved numbers")
-//        }else {
-//            print("error saving number")
-//            
-//        }
-//    }
-//    
-//    func resetCalculation() {
-//        numbersToUse = []
-//        operatorsToUse = []
-//        currentNumber = []
-//        currentText = ["0"]
-//    }
-    
-//    func setCurrentOperands() {
-//        for operand in currentNumberText {
-//            guard let number = Double(operand) else {
-//                operatorsToUse.append(operand)
-//            }
-//            currentNumber.append(String(number))
-//        }//end of for loop
-//    }//end of func
-   
-//    func clearLastInput() {
-//        if let character = Double(lastInput) {
-//            numbersToUse.removeLast()
-//            currentText.removeLast()
-//        } else {
-//            operatorsToUse.removeLast()
-//            currentText.removeLast()
-//        }
-//    }//end of clearing input
-//}//end of view controller
-//
-
 
 
