@@ -214,8 +214,15 @@ struct Vocab {
             word: "nested",
             definition: "Arranged in a hierarchical structure",
             synonyms: [""],
-            notes: ["This view is \"nested" in its super view"],
+            notes: ["This view is \"nested\" in its super view"],
             referenceImage: "control flow"
-        )
+        ),
+                    Vocab(
+                        word: "Index",
+                        definition: "The position of an element within a collection",
+                        synonyms: ["offset", "position"],
+                        notes: ["swift arrays use zero based indexing"],
+                        referenceImage: "control flow"
+                    )
     ]
 }
