@@ -217,12 +217,19 @@ struct Vocab {
             notes: ["This view is \"nested\" in its super view"],
             referenceImage: "control flow"
         ),
-                    Vocab(
-                        word: "Index",
-                        definition: "The position of an element within a collection",
-                        synonyms: ["offset", "position"],
-                        notes: ["swift arrays use zero based indexing"],
-                        referenceImage: "control flow"
-                    )
+        Vocab(
+            word: "Index",
+            definition: "The position of an element within a collection",
+            synonyms: ["offset", "position"],
+            notes: ["swift arrays use zero based indexing"],
+            referenceImage: "control flow"
+        ),
+        Vocab(
+            word: "Nil Coalescing",
+            definition: "Shorthand for providing a default value when optional is nil",
+            synonyms: ["fallback", "default value"],
+            notes: ["Uses ?? in swift"],
+            referenceImage: "Nil Coaleseing"
+        )
     ]
 }
