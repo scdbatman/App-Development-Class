@@ -26,10 +26,10 @@ struct Answer {
         
         var definition: String {
             switch self {
-            case .water: return ""
-            case .earth: return ""
-            case .fire: return ""
-            case .air: return ""
+            case .water: return "You are moldable and relaxed"
+            case .earth: return "You are solid and sparatic"
+            case .fire: return "You are passionate and intense"
+            case .air: return "you are calm and collected"
             }
         }
     }
