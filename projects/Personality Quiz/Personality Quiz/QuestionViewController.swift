@@ -9,11 +9,26 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
+    @IBOutlet var questionLabel: UILabel!
+    
+    
     @IBOutlet var rangedStackView: UIStackView!
+    @IBOutlet var rangedLabel1: UIStackView!
+    @IBOutlet var rangedLabel2: UIStackView!
     
     @IBOutlet var singleStackView: UIStackView!
+    @IBOutlet var singleButton1: UIStackView!
+    @IBOutlet var singleButton2: UIStackView!
+    @IBOutlet var singleButton3: UIStackView!
+    @IBOutlet var singleButton4: UIStackView!
     
     @IBOutlet var multipleStackView: UIStackView!
+    @IBOutlet var multiLabel1: UIStackView!
+    @IBOutlet var multiLabel2: UIStackView!
+    @IBOutlet var multiLabel3: UIStackView!
+    @IBOutlet var multiLabel4: UIStackView!
+    
+    @IBOutlet var questionProgressView: UIProgressView!
     
     var questions: [Question] = [
         Question(
@@ -66,9 +81,13 @@ class QuestionViewController: UIViewController {
         multipleStackView.isHidden = true
         rangedStackView.isHidden = true
         
-        navigationItem.title = "Question #\(questionIndex + 1)"
-        
         let currentQuestion = questions[questionIndex]
+        let currentAnswers = currentQuestion.answers
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        navigationItem.title = "Question #\(questionIndex + 1)"
+        questionLabel.text = currentQuestion.text
+        questionProgressView.setProgress(totalProgress, animated: true)
         
         switch currentQuestion.type {
         case .single:

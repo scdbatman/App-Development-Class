@@ -215,14 +215,14 @@ struct Vocab {
             definition: "Arranged in a hierarchical structure",
             synonyms: [""],
             notes: ["This view is \"nested\" in its super view"],
-            referenceImage: "control flow"
+            referenceImage: "Nested"
         ),
         Vocab(
             word: "Index",
             definition: "The position of an element within a collection",
             synonyms: ["offset", "position"],
             notes: ["swift arrays use zero based indexing"],
-            referenceImage: "control flow"
+            referenceImage: "Index"
         ),
         Vocab(
             word: "Nil Coalescing",
@@ -230,6 +230,13 @@ struct Vocab {
             synonyms: ["fallback", "default value"],
             notes: ["Uses ?? in swift"],
             referenceImage: "Nil Coaleseing"
+        ),
+        Vocab(
+            word: "Inference",
+            definition: "The compiler or interpreter determine a type rather than the type being explicitly defined by the coder",
+            synonyms: ["implicit"],
+            notes: ["let obj: String = \"hello\" vs let obj: \"Hello\" "],
+            referenceImage: "Inference"
         )
     ]
 }
