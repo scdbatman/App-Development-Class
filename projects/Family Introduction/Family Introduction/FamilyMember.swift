@@ -15,4 +15,5 @@ struct FamilyMember {
     let job: String
     let birthday: String
     let rating: String
+    let pictures: [String]
 }

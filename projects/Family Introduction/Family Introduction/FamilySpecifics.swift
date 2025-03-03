@@ -9,6 +9,7 @@ import UIKit
 
 class FamilySpecifics: UIViewController {
 
+
     var familyMember: FamilyMember?
     
     required init?(coder: NSCoder) {
@@ -32,7 +33,8 @@ class FamilySpecifics: UIViewController {
         // STEP 4
         super.viewDidLoad()
         guard let familyMember else { fatalError() }
-        
+        familyMemberImage1.image = UIImage(named: familyMember.pictures[1])
+        familyMemberImage2.image = UIImage(named: familyMember.pictures[2])
         nameLabel.text = "Name: \(familyMember.name)"
         ageLabel.text = "Age: \(familyMember.age)"
         birthdayLabel.text = "Birthday: \(familyMember.birthday)"
