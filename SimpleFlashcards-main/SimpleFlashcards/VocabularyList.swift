@@ -237,6 +237,13 @@ struct Vocab {
             synonyms: ["implicit"],
             notes: ["let obj: String = \"hello\" vs let obj: \"Hello\" "],
             referenceImage: "Inference"
+        ),
+        Vocab(
+            word: "Polymorphism",
+            definition: "Using a base or super class to treat different types the same",
+            synonyms: ["substitution"],
+            notes: [""],
+            referenceImage: "Polymorphism"
         )
     ]
 }
