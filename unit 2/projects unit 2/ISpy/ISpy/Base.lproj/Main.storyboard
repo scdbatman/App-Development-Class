@@ -18,6 +18,17 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-KM-s7e">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spy" translatesAutoresizingMaskIntoConstraints="NO" id="obn-im-c9t">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ls3-yV-yX6" firstAttribute="trailing" secondItem="obn-im-c9t" secondAttribute="trailing" id="BWL-ex-Zyq"/>
+                                    <constraint firstItem="Ls3-yV-yX6" firstAttribute="bottom" secondItem="obn-im-c9t" secondAttribute="bottom" id="N2J-DT-vQe"/>
+                                    <constraint firstItem="obn-im-c9t" firstAttribute="top" secondItem="Ls3-yV-yX6" secondAttribute="top" id="bXq-h2-OHl"/>
+                                    <constraint firstItem="obn-im-c9t" firstAttribute="leading" secondItem="Ls3-yV-yX6" secondAttribute="leading" id="tgZ-O1-6HG"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="7Mm-nh-cYo"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Ls3-yV-yX6"/>
                             </scrollView>
@@ -31,6 +42,10 @@
                             <constraint firstItem="SaC-KM-s7e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ofN-7m-gpK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="spyImage" destination="obn-im-c9t" id="8sM-Sh-KzT"/>
+                        <outlet property="spyScrollView" destination="SaC-KM-s7e" id="dhr-vc-6e3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,6 +53,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="spy" width="2222" height="2227"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
