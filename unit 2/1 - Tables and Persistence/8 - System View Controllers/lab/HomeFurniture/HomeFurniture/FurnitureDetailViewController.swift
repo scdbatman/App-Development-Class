@@ -1,7 +1,8 @@
 
 import UIKit
-
-class FurnitureDetailViewController: UIViewController {
+import SafariServices
+import MessageUI
+class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, MFMailComposeViewControllerDelegate {
     
     var furniture: Furniture?
     
@@ -38,12 +39,57 @@ class FurnitureDetailViewController: UIViewController {
         furnitureDescriptionLabel.text = furniture.description
     }
     
-    @IBAction func choosePhotoButtonTapped(_ sender: Any) {
+    @IBAction func choosePhotoButtonTapped(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
+        let alertController = UIAlertController(title: "Choose Image Source", message: nil, preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: { action in      imagePicker.sourceType = .camera
+                self.present(imagePicker, animated: true, completion: nil)
+            })
+            alertController.addAction(cameraAction)
+        }
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: { action in      imagePicker.sourceType = .photoLibrary
+                self.present(imagePicker, animated: true, completion: nil)
+            })
+            alertController.addAction(photoLibraryAction)
+        }
+//        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: { action in})
+//        let takePhotoAction = UIAlertAction(title: "Take Photo", style: .default, handler: { action in})
+//        alertController.addAction(photoLibraryAction)
+//        alertController.addAction(takePhotoAction)
+        alertController.addAction(cancelAction)
+        alertController.popoverPresentationController?.sourceView = sender
+        
+        present(alertController, animated: true, completion: nil)
     }
 
-    @IBAction func actionButtonTapped(_ sender: Any) {
+    @IBAction func actionButtonTapped(_ sender: UIButton) {
+        guard let image = photoImageView.image else { return }
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = sender
+        present(activityController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[.originalImage] as? UIImage else {return}
+        photoImageView.image = selectedImage
+        if let image = photoImageView.image, let jpegData = image.jpegData(compressionQuality: 0.9){
+            furniture?.imageData = jpegData
+            dismiss(animated: true, completion: nil)
+            updateView()
+        }
         
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: (any Error)?) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

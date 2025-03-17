@@ -244,6 +244,13 @@ struct Vocab {
             synonyms: ["substitution"],
             notes: [""],
             referenceImage: "Polymorphism"
+        ),
+        Vocab(
+            word: "higher ordered function",
+            definition: "a function that takes another function as a parameter or returns one",
+            synonyms: ["function composition"],
+            notes: [""],
+            referenceImage: "higher ordered function"
         )
     ]
 }
