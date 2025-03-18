@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Hotel Codable
 //
-//  Created by Samuel Bradshaw  on 3/17/25.
+//  Created by Jane Madsen on 3/17/25.
 //
 
 import UIKit

@@ -2,11 +2,10 @@
 //  Registration.swift
 //  Hotel Codable
 //
-//  Created by Samuel Bradshaw  on 3/17/25.
+//  Created by Jane Madsen on 3/17/25.
 //
 
 import Foundation
-
 
 struct Registration {
     var firstName: String
@@ -32,5 +31,12 @@ struct RoomType: Equatable {
     static func ==(lhs: RoomType, rhs: RoomType) -> Bool {
         return lhs.id == rhs.id
     }
+    
+    static var all: [RoomType] {
+        return [
+            RoomType(id: 0, name: "Two queens", shortName: "2Q", price: 179),
+            RoomType(id: 1, name: "One king", shortName: "1K", price: 209),
+            RoomType(id: 2, name: "Penthouse Suite", shortName: "PHS", price: 309)
+        ]
+    }
 }
-
