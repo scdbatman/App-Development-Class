@@ -33,6 +33,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         }
     }
     let dobPickerCellIndexPath = IndexPath(row: 2, section: 0)
+    let dobLabelCellIndexPath = IndexPath(row: 1, section: 0)
     
     
     override func viewDidLoad() {
@@ -95,7 +96,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath == dobPickerCellIndexPath {
+        if indexPath == dobPickerCellIndexPath && isEditingBirthday == false {
             return 0
         } else {
             return UITableView.automaticDimension
@@ -104,7 +105,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath == dobPickerCellIndexPath {
+        if indexPath == dobPickerCellIndexPath && isEditingBirthday == false{
             return 200
         }else {
             return UITableView.automaticDimension
@@ -113,7 +114,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath == dobPickerCellIndexPath {
+        if indexPath == dobLabelCellIndexPath {
             isEditingBirthday.toggle()
             dobLabel.text = dobPicker.date.formatted(date: .abbreviated, time: .omitted)
         } else {

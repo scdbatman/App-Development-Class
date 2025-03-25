@@ -66,7 +66,7 @@
         <scene sceneID="ZPY-MF-Eoi">
             <objects>
                 <tableViewController id="sKr-bE-vCi" customClass="EmployeeDetailTableViewController" customModule="EmployeeRoster" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="6qf-os-6ud">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6qf-os-6ud">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
@@ -74,23 +74,23 @@
                             <tableViewSection id="TPn-mm-APk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="htk-5F-L7d">
-                                        <rect key="frame" x="0.0" y="18" width="390" height="44"/>
+                                        <rect key="frame" x="0.0" y="18" width="390" height="56.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htk-5F-L7d" id="WNq-BC-AcE">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="56.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-u6-hKu">
-                                                    <rect key="frame" x="20" y="11" width="350" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="350" height="34.333333333333336"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd2-km-NKe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1W-fA-Vfi">
-                                                            <rect key="frame" x="59.666666666666657" y="0.0" width="290.33333333333337" height="22"/>
+                                                            <rect key="frame" x="59.666666666666657" y="0.0" width="290.33333333333337" height="34.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                             <connections>
@@ -109,23 +109,23 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bdQ-4L-DAj">
-                                        <rect key="frame" x="0.0" y="62" width="390" height="44"/>
+                                        <rect key="frame" x="0.0" y="74.333332061767578" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bdQ-4L-DAj" id="0H2-fc-s3X">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="42.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mXT-Py-N8V">
-                                                    <rect key="frame" x="20" y="11" width="350" height="22"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="350" height="20.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-ee-JxX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="20.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Please Enter DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb2-1b-Gac">
-                                                            <rect key="frame" x="215.33333333333337" y="0.0" width="134.66666666666663" height="22"/>
+                                                            <rect key="frame" x="215.33333333333337" y="0.0" width="134.66666666666663" height="20.666666666666668"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -141,25 +141,47 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KY1-n3-DWl">
+                                        <rect key="frame" x="0.0" y="117" width="390" height="216.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KY1-n3-DWl" id="tmP-kw-jzU">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="216.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="zI0-GL-pbI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="216.33333333333334"/>
+                                                    <connections>
+                                                        <action selector="dobDatePickerChanged:" destination="sKr-bE-vCi" eventType="valueChanged" id="w0L-q5-uKX"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zI0-GL-pbI" firstAttribute="top" secondItem="tmP-kw-jzU" secondAttribute="top" id="HUC-oy-5sO"/>
+                                                <constraint firstAttribute="trailing" secondItem="zI0-GL-pbI" secondAttribute="trailing" id="OXL-bi-Glq"/>
+                                                <constraint firstItem="zI0-GL-pbI" firstAttribute="leading" secondItem="tmP-kw-jzU" secondAttribute="leading" id="SBw-wg-0e4"/>
+                                                <constraint firstAttribute="bottom" secondItem="zI0-GL-pbI" secondAttribute="bottom" id="z85-eh-Nbl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="Erp-zR-5Yv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="tQD-Cn-6GM">
-                                        <rect key="frame" x="0.0" y="142" width="390" height="44"/>
+                                        <rect key="frame" x="0.0" y="369.33332824707031" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tQD-Cn-6GM" id="tTa-b3-ga2">
-                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="42.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-iw-gRD">
-                                                    <rect key="frame" x="20.000000000000007" y="11" width="120.66666666666669" height="22"/>
+                                                    <rect key="frame" x="20.000000000000007" y="11.000000000000002" width="120.66666666666669" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Please select employee type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-Fp-n5s">
-                                                    <rect key="frame" x="170.66666666666663" y="11" width="181" height="22"/>
+                                                    <rect key="frame" x="170.66666666666663" y="11.000000000000002" width="181" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -178,32 +200,6 @@
                                         <connections>
                                             <segue destination="9e1-Ur-Ifr" kind="show" destinationCreationSelector="showEmployeeTypes:" id="buT-qI-Mub"/>
                                         </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="hsF-Q0-nye">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KY1-n3-DWl">
-                                        <rect key="frame" x="0.0" y="222" width="390" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KY1-n3-DWl" id="tmP-kw-jzU">
-                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="zI0-GL-pbI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="44"/>
-                                                    <connections>
-                                                        <action selector="dobDatePickerChanged:" destination="sKr-bE-vCi" eventType="valueChanged" id="w0L-q5-uKX"/>
-                                                    </connections>
-                                                </datePicker>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zI0-GL-pbI" firstAttribute="top" secondItem="tmP-kw-jzU" secondAttribute="top" id="HUC-oy-5sO"/>
-                                                <constraint firstAttribute="trailing" secondItem="zI0-GL-pbI" secondAttribute="trailing" id="OXL-bi-Glq"/>
-                                                <constraint firstItem="zI0-GL-pbI" firstAttribute="leading" secondItem="tmP-kw-jzU" secondAttribute="leading" id="SBw-wg-0e4"/>
-                                                <constraint firstAttribute="bottom" secondItem="zI0-GL-pbI" secondAttribute="bottom" id="z85-eh-Nbl"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
