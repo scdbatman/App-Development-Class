@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		22C0DBDC2D945BDA00D3C9CE /* wholeFamilyTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C0DBDB2D945BDA00D3C9CE /* wholeFamilyTableViewCustomCell.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		22DA18CD2D6910A000FB7C8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22C0DBDB2D945BDA00D3C9CE /* wholeFamilyTableViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wholeFamilyTableViewCustomCell.swift; sourceTree = "<group>"; };
 		22DA18B62D69109E00FB7C8B /* Family Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Introduction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DA18CC2D6910A000FB7C8B /* Family IntroductionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Family IntroductionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DA18D62D6910A000FB7C8B /* Family IntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Family IntroductionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +93,7 @@
 		22DA18AD2D69109E00FB7C8B = {
 			isa = PBXGroup;
 			children = (
+				22C0DBDB2D945BDA00D3C9CE /* wholeFamilyTableViewCustomCell.swift */,
 				22DA18B82D69109E00FB7C8B /* Family Introduction */,
 				22DA18CF2D6910A000FB7C8B /* Family IntroductionTests */,
 				22DA18D92D6910A000FB7C8B /* Family IntroductionUITests */,
@@ -249,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C0DBDC2D945BDA00D3C9CE /* wholeFamilyTableViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
