@@ -7,8 +7,15 @@
 
 import Foundation
 
-struct Player {
+class Player {
     var name: String
-    var score: String
+    var score: Int
     var picture: String
+    var id = UUID()
+    
+    init(name: String, score: Int, picture: String) {
+        self.name = name
+        self.score = score
+        self.picture = picture
+    }
 }
