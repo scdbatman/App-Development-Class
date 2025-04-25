@@ -110,6 +110,7 @@ class BillDetailTableViewController: UITableViewController, UITextFieldDelegate 
         tableView.beginUpdates()
         tableView.endUpdates()
         updateRemindUI()
+        Bill.schedule(<#T##self: &Bill##Bill#>)
     }
     
     @IBAction func paymentSwitchChanged(_ sender: UISwitch) {

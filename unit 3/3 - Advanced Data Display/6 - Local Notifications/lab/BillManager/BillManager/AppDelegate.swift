@@ -9,9 +9,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
+        let center = UNUserNotificationCenter.current()
+
+        let remindLaterAction = UNNotificationAction(identifier: "remindLater", title: "Remind Me Later", options: [])
+        let payNowAction = UNNotificationAction(identifier: "payNow", title: "Pay Now", options: [.authenticationRequired])
+        let billNotificationCategory = UNNotificationCategory(identifier: "runNotification", actions: [remindLaterAction, payNowAction], intentIdentifiers: [], options: [])
+
+        center.setNotificationCategories(billNotificationCategory)
+        center.delegate = self
         return true
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        <#code#>
     }
     
     // MARK: UISceneSession Lifecycle

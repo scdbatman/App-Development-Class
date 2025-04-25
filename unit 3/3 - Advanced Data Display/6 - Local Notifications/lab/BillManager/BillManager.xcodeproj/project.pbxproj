@@ -15,6 +15,7 @@
 		01CB13BE2074A8DD0068A38A /* Bill+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB13BD2074A8DD0068A38A /* Bill+Extras.swift */; };
 		01CB13C02074DDD60068A38A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB13BF2074DDD60068A38A /* Database.swift */; };
 		01CB13C22074DFE50068A38A /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB13C12074DFE50068A38A /* BillListTableViewController.swift */; };
+		229129262DB7FE9100DB2683 /* BillNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229129252DB7FE9100DB2683 /* BillNotification.swift */; };
 		5AA658032509526500D1724C /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA658022509526500D1724C /* Bill.swift */; };
 		F74160C426B36AE600B6ABB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74160C326B36AE600B6ABB1 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		01CB13BD2074A8DD0068A38A /* Bill+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bill+Extras.swift"; sourceTree = "<group>"; };
 		01CB13BF2074DDD60068A38A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		01CB13C12074DFE50068A38A /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
+		229129252DB7FE9100DB2683 /* BillNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillNotification.swift; sourceTree = "<group>"; };
 		5AA658022509526500D1724C /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		F74160C326B36AE600B6ABB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				01CB13BF2074DDD60068A38A /* Database.swift */,
 				01CB13BD2074A8DD0068A38A /* Bill+Extras.swift */,
 				5AA658022509526500D1724C /* Bill.swift */,
+				229129252DB7FE9100DB2683 /* BillNotification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				01CB13C02074DDD60068A38A /* Database.swift in Sources */,
 				F74160C426B36AE600B6ABB1 /* SceneDelegate.swift in Sources */,
 				01CB13BC20748ED70068A38A /* BillDetailTableViewController.swift in Sources */,
+				229129262DB7FE9100DB2683 /* BillNotification.swift in Sources */,
 				01CB13BE2074A8DD0068A38A /* Bill+Extras.swift in Sources */,
 				0115FAC72072BD440061B56F /* AppDelegate.swift in Sources */,
 				5AA658032509526500D1724C /* Bill.swift in Sources */,
